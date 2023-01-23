@@ -23,6 +23,9 @@ class PostFactory extends Factory
             'email_verified_at' => now(),
             'comment'=>fake()->catchPhrase(),
             'remember_token' => Str::random(10),
+            'caducable' => true,
+            'comentable' => true,
+            'Acceso' => true,
         ];
     }
 }

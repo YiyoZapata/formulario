@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Post;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -26,5 +27,7 @@ class PostSeeder extends Seeder
             'comentable' => true,
             'Acceso' => true,
         ]);
+
+        Post::factory(5)->create();
     }
 }

@@ -58,12 +58,17 @@ class PostController extends Controller
             $comentable = False;
         }
 
+        $caducable = request('caducable');
+        if($caducable == null){
+            $caducable = False;
+        }
+
         $post = new Post();
         $post->titulo  = request('titulo');
         $post->email  = request('user_mail');
         $post->comment  = request('user_message');
         $post->Acceso = request('Acceso');
-        $post->caducable = request('caducable');
+        $post->caducable = $caducable;
         $post->comentable = $comentable;
 
         Log::info('PostController', [

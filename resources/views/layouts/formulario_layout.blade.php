@@ -130,7 +130,7 @@
         </div>
         <div>
           <label class="inline-flex items-center ml-2">Caducable</label>
-            <input type="checkbox" class="border-2 mt-1 form-checkbox text-green-500" name="caducable" checked>
+            <input type="checkbox" class="border-2 mt-1 form-checkbox text-green-500"  name="caducable" checked>
             
           
         </div>
